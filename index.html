@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Forever Page</title>
+    <title>Camera Auto-Open</title>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This page will be online forever!</p>
+    <video id="video" autoplay playsinline></video>
+    <script>
+        async function startCamera() {
+            try {
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true });
+                document.getElementById('video').srcObject = stream;
+            } catch (error) {
+                console.error("Error accessing camera:", error);
+            }
+        }
+        startCamera();
+    </script>
 </body>
 </html>
