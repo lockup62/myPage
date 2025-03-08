@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
         }
         h1 {
+            font-style: italic;
             margin-top: 20px;
         }
         video {
@@ -18,11 +19,25 @@
             border: 2px solid black;
             margin-top: 20px;
         }
+        .red-text {
+            color: red;
+            font-weight: bold;
+        }
+        .info-text {
+            margin-top: 15px;
+            font-size: 16px;
+            max-width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
     </style>
 </head>
 <body>
     <h1>Who is Jane Doe?</h1>
     <video id="video" autoplay playsinline></video>
+    <p class="info-text">
+        <span>Cause of death:</span> <span class="red-text">70% of individuals experience one or more traumatic events in their lifetime.</span>
+    </p>
     <script>
         async function startCamera() {
             try {
