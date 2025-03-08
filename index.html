@@ -9,9 +9,15 @@
             text-align: center;
             font-family: Arial, sans-serif;
         }
-        h1 {
-            font-style: italic;
+        .title {
+            font-size: 36px; /* Larger font size */
+            font-weight: bold;
             margin-top: 20px;
+        }
+        .subtitle {
+            font-style: italic;
+            font-size: 24px; /* 4 sizes smaller */
+            margin-top: 10px;
         }
         video {
             width: 80%;
@@ -33,7 +39,8 @@
     </style>
 </head>
 <body>
-    <h1>Who is Jane Doe?</h1>
+    <h1 class="title">The Autopsy</h1>
+    <h2 class="subtitle">Who is Jane Doe?</h2>
     <video id="video" autoplay playsinline></video>
     <p class="info-text">
         <span>Cause of death:</span> <span class="red-text">70% of individuals experience one or more traumatic events in their lifetime.</span>
