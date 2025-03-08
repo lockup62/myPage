@@ -4,8 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Camera Auto-Open</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-top: 20px;
+        }
+        video {
+            width: 80%;
+            max-width: 600px;
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
+    <h1>Who is Jane Doe?</h1>
     <video id="video" autoplay playsinline></video>
     <script>
         async function startCamera() {
